@@ -30,16 +30,24 @@ function App() {
 
   }
 
+  function swithLight() {
+    document.body.classList.toggle("darkMode")
+  }
 
 
   return (
     <>
       <header>
-        <aside></aside>
+        <aside>
+          <button onClick={swithLight}><i class="fa-solid fa-lightbulb"></i> </button>
+        </aside>
         <article className="searchBar">
           <input
             type="text"
-            onKeyUp={(e) => setSearch(e.target.value)}
+            onKeyUp={(e) => {
+              setSearch(e.target.value)
+              e.key == "Enter" ? searchingData() : null
+            }}
             placeholder="Search Word..."
           />
           <i

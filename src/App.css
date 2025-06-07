@@ -1,3 +1,29 @@
+.darkMode {
+  background-color: black;
+  color: white;
+}
+
+aside {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+aside button {
+  width: 30px;
+  height: 25px;
+  border-radius: 14px;
+  border: none;
+}
+
+aside button:first-child:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
 article {
   position: relative;
   width: 90%;
@@ -6,9 +32,9 @@ article {
 }
 
 input::placeholder {
-    font-family: "Josefin Sans", sans-serif;
-    text-shadow: 0 0 3px #A445ED;
-    color: black;
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 0 0 3px #a445ed;
+  color: black;
 }
 
 article input {
@@ -19,7 +45,7 @@ article input {
   font-size: 20px;
   border: 1px solid grey;
   border-radius: 10px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border: none;
   font-family: "Josefin Sans", sans-serif;
   text-shadow: 0 0 3px #9145ca;
@@ -27,7 +53,7 @@ article input {
 }
 
 article input:focus {
-    box-shadow: 0 0 10px #E8D0FA;
+  box-shadow: 0 0 10px #e8d0fa;
 }
 
 article i {
@@ -35,7 +61,7 @@ article i {
   top: 13px;
   right: 20px;
   font-size: 22px;
-  color: #A445ED;
+  color: #a445ed;
 }
 
 main {
@@ -48,28 +74,28 @@ main {
 }
 
 .word button {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #E8D0FA;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e8d0fa;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .word button i {
-    color: #A445ED;
-    font-size: 30px;
-    transition: 0.8s;
+  color: #a445ed;
+  font-size: 30px;
+  transition: 0.8s;
 }
 
 .word button:hover {
-    box-shadow: inset 0 0 20px 10px #A445ED, 0 0 2px 4px #E8D0FA;
+  box-shadow: inset 0 0 20px 10px #a445ed, 0 0 2px 4px #e8d0fa;
 }
 
 .word button:hover i {
-    font-size: 30px;
-    transform: translate(5px);
+  font-size: 30px;
+  transform: translate(5px);
 }
 
 .texts h1 {
@@ -84,6 +110,10 @@ main {
   font-size: 23px;
 }
 
+section {
+  margin-bottom: 20px;
+}
+
 section h1 {
   font-size: 35px;
   position: relative;
@@ -92,23 +122,21 @@ section h1 {
   text-shadow: 0 0 3px red;
 }
 
-
-
 section h1::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: black;
-  left: 0;
   top: 50%;
   z-index: -1;
 }
 
 section h1 span {
-  background-color: white;
-  padding-right: 25px;
-   font-family: "Loved by the King", cursive;
+  padding-right: 10px;
+  font-family: "Loved by the King", cursive;
+  position: relative;
+  z-index: 2;
 }
 
 section ul {
@@ -119,37 +147,35 @@ section ul {
 }
 
 section ul li {
-     font-family: "Fondamento", cursive;
+  font-family: "Fondamento", cursive;
 }
 
 section ul li:hover {
-    color: #9145ca;
+  color: #9145ca;
 }
 
 li::marker {
-    color: #8F19E8;
+  color: #8f19e8;
 }
 
 section h3 {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-     font-family: "Loved by the King", cursive;
-     letter-spacing: 1px;
-     text-shadow: 0 0 3px grey;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: "Loved by the King", cursive;
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px grey;
 }
 
 section h3 span {
-    color: #8F19E8;
-    
-    
+  color: #8f19e8;
 }
 
 footer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 footer h6 {
-    font-size: 20px;
-    font-family: "Fondamento", cursive;
+  font-size: 15px;
+  font-family: "Fondamento", cursive;
 }
