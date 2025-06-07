@@ -29,6 +29,17 @@ article {
   width: 90%;
   height: 60px;
   margin: 40px auto;
+
+}
+
+article p {
+    color: rgb(227, 46, 46);
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 0 0 2px darkred;
+    position: absolute;
+    bottom: -15px;
+    transition: 0.3s;
+    opacity: 0;
 }
 
 input::placeholder {
@@ -178,4 +189,19 @@ footer {
 footer h6 {
   font-size: 15px;
   font-family: "Fondamento", cursive;
+}
+
+
+
+.errorArea {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: none;
+    font-family: "Fondamento", cursive;
+}
+
+.errorArea h1{
+    text-shadow: 0 0 3px red;
 }
